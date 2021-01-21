@@ -1,0 +1,195 @@
+/* colors
+  dark blue: #4287f5
+  light blue: #91deff
+  orange: #fcb603
+*/
+
+/* Add that cool css underline effect that even showed me underneath the 'small-headings */
+
+body {
+  margin: 0;
+  font-family: 'Raleway',
+    sans-serif;
+  background-color: #f9f9f9;
+}
+
+#main {
+  width: 100%;
+  display: flex;
+  display: inline-flex;
+  margin: 5rem;
+  margin-top: 2rem;
+}
+
+#h1 a {
+  color: #fcb603;
+  font-weight: 400;
+}
+
+#h2 {
+  color: #fcb603;
+  font-weight: 400;
+}
+
+#h1 a:visited {
+  text-decoration: none;
+  decoration: none;
+  color: #fcb603;
+}
+
+#sidebar {
+  width: 30%;
+}
+
+.sidebar-content {
+  position: sticky;
+  top: 10rem;
+  text-align: center;
+}
+
+#menu-list {
+  list-style-type: none;
+  margin-right: 2rem;
+  margin-top: 0.5rem;
+}
+
+.fancy:hover {
+  color: #fcb603;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.fancy {
+  position: relative;
+}
+
+.fancy::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.5px;
+  background: #fcb603;
+  color: #fcb603;
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 300ms ease-in;
+}
+
+.fancy:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  color: #fcb603;
+}
+
+.logo {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  font-size: 1.5rem;
+}
+
+.nodecor {
+  color: #999999;
+}
+
+.nodecor,i:hover {
+  color: #fcb603;
+}
+
+.fancy2:hover.a {
+  color: #fcb603;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.fancy2 {
+  position: relative;
+  width: 135px;
+  margin: 10px auto;
+  bottom: 0;
+}
+
+.fancy2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.5px;
+  background: #fcb603;
+  color: #fcb603;
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 300ms ease-in;
+}
+
+.fancy2:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  color: #fcb603;
+}
+
+.small-headings {
+  margin-top: 3rem;
+  cursor: pointer;
+  position: relative;
+  /* color: #4287f5; */
+  color: #fcb603;
+  font-weight: 300;
+}
+
+
+a {
+  text-decoration: none;
+  color: #999999;
+}
+
+li {
+  padding-top: 5px;
+}
+
+#profile-pic {
+  border-radius: 50%;
+  width: 400px;
+  align-items: center;
+  border: 2px solid #e8ab00;
+}
+
+#content {
+  width: 60%;
+  height: fit-content;
+}
+
+header {
+  text-align: center;
+  width: 20%;
+  margin: 2rem auto;
+  font-family: 'Raleway',
+    sans-serif;
+  text-decoration: none;
+}
+
+#line {
+  margin: 10px auto;
+  width: 70%;
+  border-bottom: 1px solid #fcb603;
+}
+
+#footer {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 20PX;
+  text-align: center;
+  padding-top: 0.2rem;
+  border-top: 1px solid #fcb603;
+}
+
+.header-color:hover {
+  color: #ffbf0d;
+  transform: scale(1.2);
+  cursor: pointer;
+}
