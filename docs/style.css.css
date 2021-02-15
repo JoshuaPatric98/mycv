@@ -4,21 +4,27 @@
   orange: #fcb603
 */
 
-/* Add that cool css underline effect that even showed me underneath the 'small-headings */
-
 body {
   margin: 0;
   font-family: 'Raleway',
     sans-serif;
   background-color: #f9f9f9;
+  letter-spacing: 1px;
 }
 
 #main {
-  width: 100%;
+  width: 85%;
   display: flex;
   display: inline-flex;
-  margin: 5rem;
+  margin-left: 7%;
+  margin-right: 7%;
   margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#content {
+  width: 90%;
+  margin-left: 10%;
 }
 
 #h1 a {
@@ -49,13 +55,43 @@ body {
 
 #menu-list {
   list-style-type: none;
+  text-decoration: none;
   margin-right: 2rem;
   margin-top: 0.5rem;
 }
 
+#menu-list2 {
+  list-style-type: none;
+  text-decoration: none;
+  margin-right: 2rem;
+  margin-top: 0.5rem;
+  font-weight: 200;
+}
+
+.fancy3:hover {
+  color: #fcb603;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.int {
+  list-style-type: none;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+#contacts {
+  font-weight: 300;
+}
+
+p {
+  font-weight: 300;
+
+}
+
 .fancy:hover {
   color: #fcb603;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -74,7 +110,7 @@ body {
   color: #fcb603;
 
   transform: scaleX(0);
-  transform-origin: right;
+  transform-origin: left;
   transition: transform 300ms ease-in;
 }
 
@@ -93,6 +129,7 @@ body {
 
 .nodecor {
   color: #999999;
+  display: inline;
 }
 
 .nodecor,i:hover {
@@ -123,7 +160,7 @@ body {
   color: #fcb603;
 
   transform: scaleX(0);
-  transform-origin: right;
+  transform-origin: left;
   transition: transform 300ms ease-in;
 }
 
@@ -137,7 +174,6 @@ body {
   margin-top: 3rem;
   cursor: pointer;
   position: relative;
-  /* color: #4287f5; */
   color: #fcb603;
   font-weight: 300;
 }
@@ -159,14 +195,9 @@ li {
   border: 2px solid #e8ab00;
 }
 
-#content {
-  width: 60%;
-  height: fit-content;
-}
-
 header {
   text-align: center;
-  width: 20%;
+  width: 100%;
   margin: 2rem auto;
   font-family: 'Raleway',
     sans-serif;
@@ -176,7 +207,7 @@ header {
 #line {
   margin: 10px auto;
   width: 70%;
-  border-bottom: 1px solid #fcb603;
+  border-bottom: 0.5px solid #fcb603;
 }
 
 #footer {
@@ -192,4 +223,96 @@ header {
   color: #ffbf0d;
   transform: scale(1.2);
   cursor: pointer;
+}
+
+
+/* Media queries  ----- Challenge 8 */
+
+/* THIS IS MY FIRST BREAKPOINT: 1650px */
+@media (max-width:1450px) {
+  #content {
+    text-align: center;
+  }
+  li {
+  list-style-type: none;
+  text-decoration: none;
+  }
+  #profile-pic {
+    border-radius: 50%;
+    width: 350px;
+    align-items: center;
+    border: 2px solid #e8ab00;
+  }
+  .int {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+    text-align: center;
+  }
+  h1,h2 {
+    font-size: x-large;
+    display: inline;
+    margin: 0 auto;
+  }
+}
+
+/* SECOND BREAKPOINT: 1150px */
+
+@media (max-width:1150px) {
+  #profile-pic {
+    border-radius: 50%;
+    width: 250px;
+    align-items: center;
+    border: 2px solid #e8ab00;
+  }
+  #contacts {
+    margin-top: 1.5rem;
+  }
+  content {
+    margin-top: 1rem;
+  }
+  body {
+    font-size: medium;
+  }
+}
+
+/* THIRD BREAKPOINT: 1000px */
+
+@media (max-width:900px) {
+  body {
+    font-size: small;
+  }
+  #sidebar {
+    display: none;
+  }
+  #profile-pic {
+    display: none;
+  }
+  #content {
+    width: 100;
+  }
+  #main {
+    margin-top: 1rem;
+  }
+  h1,h2 {
+    font-size: large;
+    text-align: left;
+    display: block;
+    margin-left: 5em;
+  }
+  .small-headings {
+    margin-top: 4rem;
+  }
+  img {
+    width: 100px;
+  }
+}
+
+@media (min-width:900px) {
+  #menu-list2 {
+    display: none;
+  }
+  .fancy:hover {
+    font-size: 1rem;
+  }
 }
