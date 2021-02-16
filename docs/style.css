@@ -4,27 +4,21 @@
   orange: #fcb603
 */
 
+/* Add that cool css underline effect that even showed me underneath the 'small-headings */
+
 body {
   margin: 0;
   font-family: 'Raleway',
     sans-serif;
   background-color: #f9f9f9;
-  letter-spacing: 1px;
 }
 
 #main {
-  width: 85%;
+  width: 100%;
   display: flex;
   display: inline-flex;
-  margin-left: 7%;
-  margin-right: 7%;
+  margin: 5rem;
   margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-#content {
-  width: 90%;
-  margin-left: 10%;
 }
 
 #h1 a {
@@ -55,43 +49,13 @@ body {
 
 #menu-list {
   list-style-type: none;
-  text-decoration: none;
   margin-right: 2rem;
   margin-top: 0.5rem;
-}
-
-#menu-list2 {
-  list-style-type: none;
-  text-decoration: none;
-  margin-right: 2rem;
-  margin-top: 0.5rem;
-  font-weight: 200;
-}
-
-.fancy3:hover {
-  color: #fcb603;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.int {
-  list-style-type: none;
-  text-decoration: none;
-  font-weight: 300;
-}
-
-#contacts {
-  font-weight: 300;
-}
-
-p {
-  font-weight: 300;
-
 }
 
 .fancy:hover {
   color: #fcb603;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   cursor: pointer;
 }
 
@@ -110,7 +74,7 @@ p {
   color: #fcb603;
 
   transform: scaleX(0);
-  transform-origin: left;
+  transform-origin: right;
   transition: transform 300ms ease-in;
 }
 
@@ -129,7 +93,6 @@ p {
 
 .nodecor {
   color: #999999;
-  display: inline;
 }
 
 .nodecor,i:hover {
@@ -160,7 +123,7 @@ p {
   color: #fcb603;
 
   transform: scaleX(0);
-  transform-origin: left;
+  transform-origin: right;
   transition: transform 300ms ease-in;
 }
 
@@ -174,6 +137,7 @@ p {
   margin-top: 3rem;
   cursor: pointer;
   position: relative;
+  /* color: #4287f5; */
   color: #fcb603;
   font-weight: 300;
 }
@@ -195,9 +159,14 @@ li {
   border: 2px solid #e8ab00;
 }
 
+#content {
+  width: 60%;
+  height: fit-content;
+}
+
 header {
   text-align: center;
-  width: 100%;
+  width: 20%;
   margin: 2rem auto;
   font-family: 'Raleway',
     sans-serif;
@@ -207,7 +176,7 @@ header {
 #line {
   margin: 10px auto;
   width: 70%;
-  border-bottom: 0.5px solid #fcb603;
+  border-bottom: 1px solid #fcb603;
 }
 
 #footer {
@@ -225,10 +194,6 @@ header {
   cursor: pointer;
 }
 
-
-/* Media queries  ----- Challenge 8 */
-
-/* THIS IS MY FIRST BREAKPOINT: 1650px */
 @media (max-width:1450px) {
   #content {
     text-align: center;
